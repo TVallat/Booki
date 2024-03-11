@@ -58,6 +58,36 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header, logo & menu *******/
+
+.header {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+.nav-list {
+display: inline-block;
+margin-right: 68px;
+}
+
+.nav-list-end{
+display: inline-block;
+}
+
+.menu-interactions:hover{
+color: #0065FC;
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-underline-offset: -47px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
