@@ -61,31 +61,129 @@ a {
 /****** Header, logo & menu *******/
 
 .header {
-    height: 10%;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
-    width: 61.09px;
-    height: 19px;
+    width: 4.2rem;
+    height: 1.3rem;
 }
 
 .nav-list {
-display: inline-block;
-margin-right: 68px;
+    display: inline-block;
 }
 
-.nav-list-end{
-display: inline-block;
+.nav-list-margin {
+    margin-right: 4rem;
 }
 
-.menu-interactions:hover{
-color: #0065FC;
-text-decoration: underline;
-text-decoration-thickness: 2px;
-text-underline-offset: -47px;
+.menu-interactions {
+    display: flex;
+    height: 5.9rem;
+    border-top: 2px solid #F2F2F2;
+    align-items: center;
+}
+.menu-interactions:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+/****** Search formula **********/
+
+.geographical-search {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-border, .input-field, .search-btn {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+    padding-top:10px ;
+    padding-bottom:10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.fa-location-dot {
+    color: black;
+    font-size: 15.6px; /**Temporary fix**/
+}
+
+.icon-border {
+    background-color: lightgray;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; 
+    padding-left: 14px;
+}
+
+.input-field {
+    margin-left: -1px;
+    font-weight: bold;
+    opacity: 1;
+    color: black;
+}
+
+.search-btn {
+    margin-left: -1px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-color: #0065FC;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px; 
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.filter-list {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 1rem;
+    border: 2px solid lightgray;
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+ul { /**Temporary fix**/
+    margin: 0;
+    padding: 0;
+}
+
+h1 { /**Temporary fix**/
+    margin-bottom: 0.5rem;
+}
+
+p { /**Temporary fix**/
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.filter-list:hover {
+    background-color: #DEEBFF;
+}
+
+.icon-text-distance { /**Temporary fix**/
+    margin-left: 0.5rem; 
+}
+
+.housing-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 /****** Hebergements And Populaires ***********/
