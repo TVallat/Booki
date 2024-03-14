@@ -3,6 +3,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+html {
+    font-size: 16px;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -96,18 +100,15 @@ a {
 
 .geographical-search {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .icon-border, .input-field, .search-btn {
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgray;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    box-sizing: border-box;
-    padding-top:10px ;
+    border: 1px solid lightgray;
+    padding-top:10px;
     padding-bottom:10px;
     padding-right: 10px;
     padding-left: 10px;
@@ -134,12 +135,13 @@ a {
 
 .search-btn {
     margin-left: -1px;
-    background-color: #0065FC;
-    color: #FFFFFF;
+    background-color:#0065FC;
+    color:#F2F2F2;
     font-weight: bold;
     border-color: #0065FC;
     border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px; 
+    border-bottom-right-radius: 12px;
+    padding-top:7px;
 }
 
 .filters {
@@ -158,16 +160,16 @@ a {
     padding-right: 1.5rem;
 }
 
-ul { /**Temporary fix**/
+.filters ul {
     margin: 0;
     padding: 0;
 }
 
-h1 { /**Temporary fix**/
+.search-formula h1 {
     margin-bottom: 0.5rem;
 }
 
-p { /**Temporary fix**/
+.search-formula p {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -176,7 +178,7 @@ p { /**Temporary fix**/
     background-color: #DEEBFF;
 }
 
-.icon-text-distance { /**Temporary fix**/
+.icon-text-distance {
     margin-left: 0.5rem; 
 }
 
@@ -202,6 +204,46 @@ p { /**Temporary fix**/
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 33px;
+    gap: 33px;
+    box-sizing: border-box;
+}
+.hebergements-cards .card {
+    display: flex;
+}
+
+.hebergements-cards img {
+    width: 238px;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .hcard-content {
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .hcard-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .hcard-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -249,7 +291,19 @@ p { /**Temporary fix**/
     margin-bottom: 5px;
 }
 
+/******* Activités **********/
 
+.activites {
+    display: flex;
+}
+
+.activites section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
