@@ -225,25 +225,28 @@ a {
     border-top-right-radius: 20px;
 }
 
-.hebergements-cards .hcard-content {
+.hebergements-cards .card-content {
     width: 100%;
-    padding-bottom: 15px;
     display: flex;
     flex-direction:column;
     box-sizing: border-box;
 }
-
-.hebergements-cards .hcard-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+.hebergements-cards .card-txt {
+    margin-left: 8px;
 }
 
-.hebergements-cards .hcard-subtitle {
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.hebergements-cards .card-subtitle {
     margin: 0;
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom: 5px;
+    margin-left: 8px;
+    margin-top: 8px;
 }
 
 /****** Populaires ***********/
@@ -298,13 +301,65 @@ a {
 }
 
 .activites section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
     width: 100%;
 }
 
+.activites-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.activites-cards img {
+    height: 380px;
+    width: 286px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.activites-cards .card {
+    display: flex;
+    padding: 0;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.activites-cards .card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.activites-cards h3 {
+    margin-left: 8px;
+}
+
+/********* Footer ***********/
+
+.footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+    padding-right: 300px;
+    padding-left: 16px;
+    padding-top: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer .infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h3,.footer a {
+margin-top: 0px;
+margin-bottom: 8px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
