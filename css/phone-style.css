@@ -197,7 +197,15 @@
     }
 
     .footer .infos {
-        padding: 30px;
-        width: 100%;
+        padding: 0px;
+        width: inherit;
+        margin: 30px;
+    }
+}
+
+/****** Réduction de la marge pour que le texte tienne à l'intérieur des bordures de filtres sous 360px de largeur d'écran******/
+@media (max-width: 360px) {
+    .filter-list i {
+        margin-left: 1rem; 
     }
 }
